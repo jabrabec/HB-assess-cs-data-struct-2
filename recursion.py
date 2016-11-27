@@ -44,11 +44,16 @@ def print_all_tree_data(tree):
         3
 
     """
-    pass
+    print tree.data
+
+    if not tree.children:
+        return
+    else:
+        for child in tree.children:
+            print_all_tree_data(child)
+
 
 # 3. Write a function that uses recursion to find the length of a list.
-
-
 def list_length(my_list):
     """Returns the length of list recursively.
         >>> list_length([1, 2, 3, 4])

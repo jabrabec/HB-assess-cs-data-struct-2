@@ -15,9 +15,8 @@ def print_item(my_list, i=0):
     """
     if i not in range(len(my_list)):
         return
-    else:
-        print my_list[i]
-        print_item(my_list, i + 1)
+    print my_list[i]
+    print_item(my_list, i + 1)
 
 
 # 2. Write a function that uses recursion to print each node in a tree.
@@ -48,9 +47,8 @@ def print_all_tree_data(tree):
 
     if not tree.children:
         return
-    else:
-        for child in tree.children:
-            print_all_tree_data(child)
+    for child in tree.children:
+        print_all_tree_data(child)
 
 
 # 3. Write a function that uses recursion to find the length of a list.

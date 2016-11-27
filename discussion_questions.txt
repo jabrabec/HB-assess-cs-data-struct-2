@@ -1,0 +1,35 @@
+Recursion:
+    1) Recursion in the context of computer science is the case where a function
+    is called within its own definition; a function calls itself, ergo each
+    subsequent function call will again call the function, repeating the process.
+    2) A base case is necessary in a function definition because it defines the
+    conditions under which the recursion will cease. Without a base case, the
+    recursion could continue indefintely. Often the base case and recursive
+    function call can be placed in related if/else clauses, along the lines of:
+        def function(x):
+            if x == base_case:
+                return
+            else:
+                function(x - y)
+
+Graphs:
+    1) In computer science, a graph is an abstract data type that is used to
+    model relationships - ordered or unordered - between its component nodes. It
+    is less prescriptive about the number and directions in which the nodes can
+    be connected than other data structures, such as trees or linked lists, are.
+    In this way it can be thought of as a parent category to trees, which are
+    then a parent category to linked lists. A given node in a graph can be
+    connected to many other nodes, and those relationships (edges) can be
+    directional or undirected. These connections can thus be cyclic.
+    2) A graph is different from a tree in that the connections between nodes
+    are directed - there is a defined parent and child relationship between
+    them. In this way the connections are also acyclic: a given node cannot be
+    the parent of another node and then down the line also be one of its
+    descendants. Similarly, in a tree a node can only have one parent.They are
+    similar, however, in that there is no limit on the number of connections a
+    node can have downstream.
+    3) A real-world example of something that would be good to model with a
+    graph is a social network. Many individual people (nodes) will be present
+    and each can have an unconstrained number of connections to other people,
+    and the relationship (edge) between them does not by definition have to be
+    hierarchical.

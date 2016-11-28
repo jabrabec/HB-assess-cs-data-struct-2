@@ -45,8 +45,6 @@ def print_all_tree_data(tree):
     """
     print tree.data
 
-    if not tree.children:
-        return
     for child in tree.children:
         print_all_tree_data(child)
 

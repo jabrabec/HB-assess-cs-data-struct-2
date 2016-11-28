@@ -11,6 +11,12 @@ Recursion:
                 return
             else:
                 function(x - y)
+    Base cases can be hidden (implicitly defined) or explicit (clearly defined).
+    They can also be considered degenerate (there's no theoretically possible
+    way for the recursion to continue once the base case is reached, e.g. as in
+    giving a value to the length of an empty list) or not degenerate (the
+    stopping point is more arbitrary, as in stopping once length of list is >=5,
+    but recursion could theoretically continue).
 
 Graphs:
     1) In computer science, a graph is an abstract data type that is used to
